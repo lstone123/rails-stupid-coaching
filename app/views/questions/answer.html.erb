@@ -1,9 +1,12 @@
-<h1>Stupid Coaching</h1>
-
-<ul>
-<li><%= @question %></li>
-<li><%= @answer  %></li>
-</ul>
-
-
-<%= link_to "Ask a new question", "/ask" %>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <blockquote>
+    <p><%= @question %></p>
+    <footer class="fst-italic">-You</footer>
+  </blockquote>
+  <blockquote style="background-color:#FFFFE1">
+    <p><strong><%= @answer  %></strong></p>
+    <footer class="fst-italic">-Your coach</footer>
+  </blockquote>
+  <%= link_to "Ask a new question", "/ask"%>
+</div>
